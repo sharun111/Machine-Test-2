@@ -1,0 +1,297 @@
+.services {
+  background-color: black;
+  color: white;
+  padding: 60px 20px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.services-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.video-section {
+  background-color: #dccdcd;
+  width: 477px;
+  height: 321px;
+  border-radius: 25px;
+  background-image: url('/cc30cac8292777e20fd312b3cec87119032513b0.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.watch-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.testimonial-box {
+  background-color: #1a1a1a;
+  border: 1px solid #3b3b3b;
+  padding: 96px 41px 96px 41px;
+  border-radius: 25px;
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.testimonial-author {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.leaf-icon {
+  position: absolute;
+  width: 37px;
+  height: 87px;
+}
+
+.leaf-icon.left {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leaf-icon.right {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.design-box {
+  background-color: #1a1a1a;
+  border: 1px solid #3b3b3b;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  max-width: 1220px;
+  height: 369px;
+  padding: 41px;
+  gap: 20px;
+}
+
+.design-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.design-left h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.design-left span {
+  font-weight: 600;
+}
+
+.design-right {
+  flex: 2;
+  min-width: 280px;
+  position: relative;
+}
+
+.design-right p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.design-right .author {
+  color: #aaa;
+}
+
+.leaf-icon.bottom-right {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.logos-section {
+  width: 100%;
+  max-width: 1240px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.logos-heading {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.logos-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  padding: 10px 0;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.logos-scroll img {
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Hide scrollbar */
+.logos-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .services-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .video-section,
+  .testimonial-box {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .testimonial-box {
+    text-align: center;
+    padding: 24px;
+    margin-top: 0;
+  }
+
+  .design-box {
+    padding: 24px;
+    height: auto;
+;
+  }
+
+  .design-left,
+  .design-right {
+    width: 100%;
+  }
+
+  .design-right {
+    margin-top: 20px;
+  }
+
+  .watch-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .leaf-icon.left,
+  .leaf-icon.right,
+  .leaf-icon.bottom-right {
+    display: none;
+  }
+
+  .logos-scroll {
+    gap: 20px;
+  }
+
+  .logos-section {
+    width: 90%;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .services {
+    padding: 40px 16px;
+    padding-top: 0px;
+    gap: 30px;
+    
+    
+  }
+
+  .video-section {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .watch-button {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+
+  .testimonial-box {
+    padding: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 13px;
+  }
+
+  .testimonial-author {
+    font-size: 12px;
+  }
+
+  .design-box {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .design-left,
+  .design-right {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .design-left h2 {
+    font-size: 18px;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+
+  .design-right p {
+    font-size: 13px;
+    word-wrap: break-word;
+  }
+
+  .logos-scroll img {
+    height: 10px;
+  }
+
+  .logos-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}

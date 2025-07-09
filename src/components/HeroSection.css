@@ -1,0 +1,118 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 24px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 50px;
+  padding: 0 16px;
+  text-align: center;
+  position: relative;
+  top: -164px;
+  z-index: 9999;
+}
+
+/* Review Badge */
+.review-badge {
+  padding: 6px 16px;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 40px;
+}
+
+.stars {
+  color: #facc15;
+}
+
+/* Title — big on desktop, auto-scale on mobile */
+.hero-title {
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 1.2;
+  max-width: 960px;
+}
+
+/* Responsive override for tablets and phones */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 7vw;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 8vw;
+  }
+}
+
+/* Subtext */
+.hero-subtext {
+  font-size: 14px;
+  color: #cccccc;
+  max-width: 90%;
+}
+
+@media (min-width: 640px) {
+  .hero-subtext {
+    font-size: 16px;
+    max-width: 500px;
+  }
+}
+
+/* Button */
+.hero-button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background-color: #facc15;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 180px;
+}
+
+.hero-button:hover {
+  background-color: #fbbf24;
+}
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 6vw;
+    line-height: 1.2;
+  }
+
+  .hero-subtext {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .review-badge {
+    font-size: 9px;
+    padding: 4px 12px;
+    height: 24px;
+  }
+
+  .hero-button {
+    padding: 5px 10px;
+    font-size: 13px;
+    max-width: 100px;
+  }
+
+  .hero-section {
+    padding: 0 12px;
+    gap: 20px;
+    position: relative;
+  top: -90px;
+  }
+}
