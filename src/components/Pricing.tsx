@@ -1,6 +1,6 @@
 export default function Pricing() {
     return (
-        <div className="mb-[100px] px-4">
+        <div className="mb-[100px] px-4  max-[400px]:text-center">
             <div className="flex flex-col items-center text-center mb-16">
                 <div className="mb-3 inline-block bg-black border border-yellow-300 text-yellow-300  px-4 py-1 rounded-full text-sm">
                     Pricing
@@ -19,7 +19,7 @@ export default function Pricing() {
                         <p className="text-sm mb-2 text-gray-400">STANDARD</p>
                         <p className="text-xl sm:text-3xl text-3xl font-semibold">$2,150<span className="text-base font-normal">/month</span></p>
                         <a href="#" className="text-yellow-400 underline text-sm mt-1 inline-block">One request at a time</a>
-                        <ul className="text-sm mt-6 space-y-2 text-gray-300">
+                        <ul className="text-sm mt-6 space-y-2 text-gray-300 ">
                             <li className="flex items-start gap-2"><span className="text-yellow-400">✔</span>Unlimited requests</li>
                             <li className="flex items-start gap-2"><span className="text-yellow-400">✔</span>~48 hour delivery</li>
                             <li className="flex items-start gap-2"><span className="text-yellow-400">✔</span>Unlimited brands</li>
@@ -41,7 +41,7 @@ export default function Pricing() {
                 </div>
 
                 {/* PRO PLAN */}
-                <div className="bg-[#111] rounded-[20px] p-8 w-full sm:w-[320px] flex flex-col justify-between relative">
+                <div className="bg-[#111] rounded-[20px] p-8 w-full sm:w-[320px] flex flex-col justify-between relative ">
                     <div className="absolute top-4 right-4 bg-yellow-900 text-yellow-300 text-xs px-3 py-1 rounded-full">
                         Faster ⚡
                     </div>
@@ -49,7 +49,7 @@ export default function Pricing() {
                         <p className="text-sm mb-2 text-gray-400">PRO</p>
                         <p className="text-xl sm:text-3xl text-3xl font-semibold">$3,150<span className="text-base font-normal">/month</span></p>
                         <a href="#" className="text-yellow-400 underline text-sm mt-1 inline-block">Double the requests</a>
-                        <ul className="text-sm mt-6 space-y-2 text-gray-300">
+                        <ul className="text-sm mt-6 space-y-2 text-gray-300 ">
                             <li className="flex items-start gap-2"><span className="text-yellow-400">✔</span>Unlimited requests</li>
                             <li className="flex items-start gap-2"><span className="text-yellow-400">✔</span>~48 hour delivery</li>
                             <li className="flex items-start gap-2"><span className="text-yellow-400">✔</span>Unlimited brands</li>
@@ -71,7 +71,6 @@ export default function Pricing() {
                 </div>
 
                 {/* COLUMN: Project-Based & Refer */}
-                {/* Last 2 cards — responsive only on small screens */}
                 <div className="flex flex-col md:flex-col sm:flex-row gap-[50px] justify-center">
                     {/* PROJECT-BASED */}
                     <div className="bg-[#111] rounded-[20px] p-8 w-full sm:w-[300px] h-[270px] flex flex-col justify-between">
