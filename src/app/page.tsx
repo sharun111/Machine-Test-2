@@ -1,7 +1,4 @@
 
-
-
-
 import HeroSection from '@/components/HeroSection';
 import Portfolio from "../components/Portfolio";
 import Services from "@/components/Services";
