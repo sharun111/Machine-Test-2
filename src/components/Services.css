@@ -139,6 +139,8 @@
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  overflow: hidden; /* hides overflow during animation */
+  position: relative;
 }
 
 .logos-heading {
@@ -148,24 +150,32 @@
   text-transform: uppercase;
 }
 
+/* Container for animation */
 .logos-scroll {
   display: flex;
-  overflow-x: auto;
   gap: 40px;
-  padding: 10px 0;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+  animation: scroll 30s linear infinite;
+  width: max-content;
 }
 
 .logos-scroll img {
   height: 40px;
   object-fit: contain;
   flex-shrink: 0;
-  scroll-snap-align: start;
   pointer-events: none;
   user-select: none;
 }
+
+/* Keyframes for scroll effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 /* Hide scrollbar */
 .logos-scroll::-webkit-scrollbar {

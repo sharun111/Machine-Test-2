@@ -37,7 +37,61 @@ export default function Testimonial() {
       role: "CEO @hyperbolic",
       text: "“Vasilije did an outstanding job designing our website. He’s highly skilled, professional...”",
       source: "Clutch",
+    }, {
+      name: "Milos Vidic",
+      role: "CEO @goatmarketing",
+      text: "“Thanks to Handmade, we experienced a significant boost in website traffic, conversion rate, and website loading time...”",
+      source: "Clutch",
     },
+    {
+      name: "Rasess Seth",
+      role: "CEO @nextyn",
+      text: "“Vas was extremely easy to work with. He’s a pro at Webflow and is always open to hearing you out...”",
+      source: "Upwork",
+    },
+    {
+      name: "Goran Markovic",
+      role: "Founder @viztiya",
+      text: "“Working with Handmade on our website design was an exceptional experience. As an architect...”",
+      source: "Clutch",
+    },
+    {
+      name: "Chris Hjort",
+      role: "PM @host",
+      text: "“I highly recommend Vasilije. He is a hardworking guy with great ideas for big or small projects...”",
+      source: "Clutch",
+    },
+    {
+      name: "Borgar Erlendsson",
+      role: "CEO @kozmoz",
+      text: "“True professional capable of delivering quality work within very tight time constraints...”",
+      source: "Clutch",
+    },
+    {
+      name: "Jasper Zhang",
+      role: "CEO @hyperbolic",
+      text: "“Vasilije did an outstanding job designing our website. He’s highly skilled, professional...”",
+      source: "Clutch",
+    },
+    {
+      name: "Goran Markovic",
+      role: "Founder @viztiya",
+      text: "“Working with Handmade on our website design was an exceptional experience. As an architect...”",
+      source: "Clutch",
+    },
+    {
+      name: "Chris Hjort",
+      role: "PM @host",
+      text: "“I highly recommend Vasilije. He is a hardworking guy with great ideas for big or small projects...”",
+      source: "Clutch",
+    },
+    {
+      name: "Borgar Erlendsson",
+      role: "CEO @kozmoz",
+      text: "“True professional capable of delivering quality work within very tight time constraints...”",
+      source: "Clutch",
+    }
+    
     // Duplicates removed for clarity
   ];
 
@@ -53,8 +107,11 @@ export default function Testimonial() {
         </h2>
       </div>
 
+
       {/* Scrollable Testimonials */}
       <div className="max-h-[500px] w-full max-w-[1440px] overflow-y-auto pr-1 scroll-smooth scrollbar-hide">
+
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {testimonials.map((t, index) => (
             <div
