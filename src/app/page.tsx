@@ -1,14 +1,14 @@
 
-import HeroSection from '@/components/HeroSection';
+import HeroSection from '@/components/Herosection/HeroSection';
 import Portfolio from "../components/Portfolio";
-import Services from "@/components/Services";
+import Services from "@/components/Services/Services";
 import Faq from "@/components/Faq";
 import Pricing from "@/components/Pricing";
 import Testimonial from "@/components/Testimonials";
 import Delivery from "@/components/Delivery";
 import Footer from "@/components/Footer";
 import Benifits from "@/components/Benifits";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 
 
 
